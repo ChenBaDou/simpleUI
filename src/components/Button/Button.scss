@@ -1,0 +1,96 @@
+@import '../../scss/util.scss';
+
+.btn{
+    outline: none;
+    border: none;
+    color: #606266;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    &.btn-primary{
+        background: $col1;
+        border: 1px solid $col1;
+        color: #fff;
+        &:hover{
+            background: $col2;
+            border: 1px solid $col2;
+        }
+        &:active{
+            background: $col3;
+            border: 1px solid $col3;
+        }
+        
+    }
+    &.btn-disabled{
+        cursor: not-allowed;
+        background: $col13;
+        border: 1px solid $col13;
+        color: $col10;
+        &:hover{
+            background: $col13;
+            border: 1px solid $col13;
+        }
+        &:active{
+            background: $col13;
+            border: 1px solid $col13;
+        }
+    }
+    &.btn-success{
+        background: $col6;
+        border: 1px solid $col6;
+        color: #fff;
+    }
+    &.btn-waring{
+        background: $col7;
+        border: 1px solid $col7;
+        color: #fff;
+    }
+    &.btn-danger{
+        background: $col5;
+        border: 1px solid $col5;
+        color: #fff;
+    }
+    &.btn-txt {
+        color: #0896ff;
+        border: none;
+        background: none;
+        padding: 0;
+        border-radius: 0;
+        height: auto;
+        &:hover {
+            color: $col2;
+        }
+
+        &:active {
+            color: $col3;
+        }
+        &.btn-disabled {
+            color: $col11;
+        }
+    }
+    &.btn-plain{
+        background: #fff;
+        &:hover{
+            background: #fff;
+            border: 1px solid $col2;
+            color: $col2;
+        }
+        &:active{
+            background: #fff;
+            border: 1px solid $col3;
+            color: $col3;
+        }
+        &.btn-disabled{
+            color: $col11;
+            border:  1px solid $col13;
+
+        }
+    }
+    &.is-round{
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,206 @@
+@import '../util.scss';
+//左边
+.info-left-touxiang{
+    .result-box{
+        padding-top: 18px;
+        img{
+            width: 104px;
+            height: 104px;
+            border-radius: 50%;
+        }
+        p.text{
+            margin-top: 20px;
+        }
+        p.resultTxt{
+            margin-top: 5px;
+            color: $col10;
+            margin-bottom: 25px;
+        }
+    }
+
+}
+.info-left-zhiye{
+    background: #fff;
+    margin: 0 20px;
+    margin-top: -140px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: $col9;
+    padding: 0 24px;
+    .row{
+        line-height: 28px;
+        &:last-child{
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                border-bottom: 1px dashed $col12;
+                margin-top: 55px;
+            }
+        }
+    }
+}
+.info-left-biaoqian{
+    background: #fff;
+    margin: 0 20px;
+    padding-top: 50px;
+    margin-top: -23px;
+    padding-bottom: 30px;
+    .layout-com-box{
+        margin-top: 0;
+    }
+    .layout-button{
+        padding: 0;
+        margin-top: 0;
+        .biaoqian-add button{
+            border:1px dashed $col13;
+        }
+        button{
+            font-size: 12px;
+            padding:0 11px;
+            height: 22px;
+        }
+        span{
+            margin: 0 5px;
+        }
+        li{
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100%;
+                border-bottom: 1px dashed $col12;
+                margin-top: 55px;
+            }
+        }
+    }
+}
+.biaoqian,.tuandui{
+    font-size:14px;
+    font-weight:500;
+    color:$col8;
+    padding-left: 24px;
+}
+.info-left-tuandui{
+    background: #fff;
+    margin: 0 20px;
+    .row{
+        padding: 0 24px;
+        .tuandui-touxiang{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+        >div{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: 41px;
+            .tuandui-person{
+                margin-left: 12px;
+                font-size: 14px;
+                color: $col9;
+            }
+        }
+    }
+}
+//右边
+.info-right{
+    .nav-box{
+        margin: 20px 20px 20px 0;
+        .nav-content{
+            padding: 20px;
+            .cur{
+                .cur-content-list{
+                    font-size: 14px;
+                    padding: 20px 0;
+                    border-bottom: 1px solid $col12;
+                    &:first-child{
+                        padding-top: 0;
+                    }
+                    &:last-child{
+                        border: none;
+                    }
+                    >div{
+                        margin-bottom: 15px;
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                    .title{
+                        span{
+                            color: $col8;
+                            font-weight: 500;
+                        }
+                        .btn{
+                            padding: 0 2px;
+                            font-size: 12px;
+                            height: auto;
+                            vertical-align: text-top;
+                        }
+                    }
+                    .zhiye{
+                        .btn{
+                            font-size: 12px;
+                            padding:0 11px;
+                            height: 22px;
+                            margin-right: 5px;
+                        }
+                    }
+                    .text{
+                        color: $col9;
+                    }
+                    .time{
+                        img{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            vertical-align: text-top;
+                        }
+                        .blue-txt{
+                            color: $col1;
+                        }
+                        .dayTime{
+                            color: #C1C1C1;
+                        }
+                    }
+                    .count{
+                        color: $col10;
+                        ul{
+                            display: flex;
+                            li{
+                                position: relative;
+                                padding: 0 17px;
+                                i{
+                                    margin-right: 17px;
+                                }
+                                &:after{
+                                    content: '';
+                                    display: inline-block;
+                                    position: absolute;
+                                    right: 0;
+                                    width: 1px;
+                                    background: $col12;
+                                    height: 80%;
+                                    top: 50%;
+                                    transform: translate(0,-50%);
+
+                                }
+                                &:first-child{
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nav-box-top{
+        .nav-tab{
+            padding-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+$baseFontSize : 20 !default;
+
+// 公共颜色
+$col1: #0099FF;
+$col2: #3FA9FF;
+$col3: #0A6DD9;
+$col4: #E5F7FF;
+$col5: #FF4951;
+$col6: #2CD7AA;
+$col7: #FFC602;
+$col8: #262626;
+$col9: #595959;
+$col10: #8C8C8C;
+$col11: #BFBFBF;
+$col12: #E8E8E8;
+$col13: #D9D9D9;
+
+/**/
+@mixin transition($value...) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    transition: $value;
+}
+
+@mixin transform($value...) {
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+@mixin clamp($value...){ //要显示几行，剩下的隐藏
+    display: -webkit-box;
+    display: box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-line-clamp: $value;
+    line-clamp: $value;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin animation($value...) {
+    -webkit-animation: $value;
+    -moz-animation: $value;
+    -ms-animation: $value;
+    animation: $value;
+}
+
+@function torem($value) {
+    @return ($value / $baseFontSize * 1rem);
+}
+
+@mixin txtColGradient($value...) {
+    background-image: linear-gradient($value);
+    background-image: -webkit-linear-gradient($value);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+
+%overflow-scrolling { -webkit-overflow-scrolling:touch; overflow-scrolling:touch; overflow: auto;}
+
+%els { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }

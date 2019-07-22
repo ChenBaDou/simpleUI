@@ -1,0 +1,130 @@
+@import '../../scss/util.scss';
+.nav-box{
+    //默认样式
+    .nav-tab{
+        background: #fff;
+        li{
+            display: inline-block;
+            position: relative;
+            font-size: 16px;
+            &.active{
+                color: $col1;
+            }
+            &:after{
+                content: '';
+                position: absolute;
+            }
+        }
+        li.gray{
+            color: $col12 !important;
+        }
+    }
+    .nav-content{
+        background: #fff;
+        >div{
+            display: none;
+        }
+        .cur{
+            display: block;
+        }
+    }
+
+    //上下左右
+    &.nav-box-top{
+        display: inherit;
+        .nav-tab{
+            border-bottom: 1px solid $col12;
+            li.tab-title{
+                flex: 1;
+                font-size: 16px;
+                padding: 10px;
+                cursor: pointer;
+                &.active{
+                    &:after{
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 1px;
+                        border:1px solid $col1;
+                    }
+                }
+            }
+        }
+        .nav-content{
+
+        }
+    }
+    &.nav-box-left{
+        display: flex;
+        .nav-tab{
+            border-right: 1px solid $col12;
+            flex: none;
+            li.tab-title{
+                display: inherit;
+                margin: 0;
+                padding: 10px;
+                &.active{
+                    &:after{
+                        right: 0;
+                        bottom: 0;
+                        width: 1px;
+                        height: 100%;
+                        border:1px solid $col1;
+                    }
+                }
+            }
+        }
+        .nav-content{
+            flex: auto;
+        }
+    }
+    &.nav-box-right{
+        display: flex;
+        flex-direction: row-reverse;
+        .nav-tab{
+            border-left: 1px solid $col12;
+            flex: none;
+            li.tab-title{
+                display: inherit;
+                margin: 0;
+                padding: 10px;
+                &.active{
+                    &:after{
+                        left: 0;
+                        bottom: 0;
+                        width: 1px;
+                        height: 100%;
+                        border:1px solid $col1;
+                    }
+                }
+            }
+        }
+        .nav-content{
+            flex: auto;
+        }
+    }
+    &.nav-box-bottom{
+        display: flex;
+        flex-direction: column-reverse;
+        .nav-tab{
+            border-top: 1px solid $col12;
+            li.tab-title{
+                display: inline-block;
+                margin: 0;
+                padding: 10px;
+                &.active{
+                    &:after{
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        border:1px solid $col1;
+                    }
+                }
+            }
+        }
+        .nav-content{
+            flex: auto;
+        }
+    }
+}

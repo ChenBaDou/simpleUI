@@ -1,0 +1,8 @@
+@import '../util.scss';
+
+.layout-input{
+    padding: 10px;
+    &>span{
+        margin-bottom: 15px;
+    }
+}

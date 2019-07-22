@@ -1,0 +1,16 @@
+@import '../../scss/util.scss';
+
+.content-head{
+    background: #FFFFFF;
+    padding: 17px 32px;
+    .title{
+        margin-top: 17px;
+        font-size: 20px;
+        color: $col8;
+    }
+    .text{
+        margin-top: 18px;
+        font-size: 14px;
+        color: $col9;
+    }
+}

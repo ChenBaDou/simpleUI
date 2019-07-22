@@ -1,0 +1,20 @@
+@import '../../scss/util.scss';
+
+.breadcrumb-box{
+    font-size: 14px;
+    color: $col10;
+    & > span{
+        .breadcrumb-separator{
+            margin: 0 8px;
+        }
+        &:last-child{
+            color: $col9;
+        }
+        a {
+            color: $col10;
+            &:hover {
+                color: $col2
+            }
+        }
+    }
+}

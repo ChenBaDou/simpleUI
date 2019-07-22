@@ -1,0 +1,119 @@
+@import '../../scss/util.scss';
+
+.perm_tree{
+    padding-left: 20px;
+    .perm_tree_item{
+        .tree_node{
+            &.cur_node{
+                color: #488DFD;
+                font-weight: bolder;
+            }
+            .tree_status{
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-bottom: 3px;
+                &.show{
+                    background:url("../../image/icon-tree.png") 0px -9px no-repeat;
+                }
+                &.hide{
+                    background:url("../../image/icon-tree.png") -32px -9px no-repeat;
+                }
+            }
+            em{
+                cursor:pointer;
+                &.check{
+                    border: 1px solid #ccc;
+                    width: 12px;
+                    height: 12px;
+                    display: inline-block;
+                    @include transition(all .6s);
+                    border-radius: 2px;
+                    position: relative;
+                    margin: 0 10px;
+                    vertical-align: middle;
+                    &.on{
+                        background:#0092dc;
+                        border: 1px solid #0092dc;
+                        &:after{
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 4px;
+                            height: 8px;
+                            border: 1px solid #fff;
+                            border-left-color: transparent;
+                            border-top-color: transparent;
+                            transform: rotate(45deg);
+                            left: 3px;
+                            top: -1px;
+                        }
+                    }
+                    &:hover{
+                        border: 1px solid #639FFF;
+                    }
+                    &.part_on{
+                        border: 1px solid #0092dc;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            width: 4px;
+                            height: 8px;
+                            border: 1px solid #666666;
+                            border-left-color: transparent;
+                            border-top-color: transparent;
+                            transform: rotate(45deg);
+                            left: 3px;
+                            top: -1px;
+                        }
+                    }
+                }
+            }
+            .folder{
+                display: inline-block;
+                background: url("../../image/folder-close.png") -3px -3px no-repeat;
+                width: 15px;
+                height: 17px;
+                vertical-align: middle;
+                cursor: pointer;
+                position: relative;
+                &.open{
+                    background: url("../../image/folder-open.png") -3px -3px no-repeat;
+                }
+                .contextmenu{
+                    border: 1px solid #ddd;
+                    background: #ffffff;
+                    width: 120px;
+                    color: #333333;
+                    position: absolute;
+                    top: 20px;
+                    left: 0px;
+                    z-index: 99;
+                    box-shadow: 0px 0px 6px #ddd;
+                    .menu_item{
+                        border-bottom: 0px solid #e5e5e5;
+                        height: 30px;
+                        line-height: 30px;
+                        color: #666666;
+                        cursor: pointer;
+                        padding: 0px 10px;
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                        &:hover{
+                            background: #f2f2f2;
+                        }
+                    }
+                }
+            }
+            .perm_name{
+                display: inline-block;
+                height: 20px;
+                line-height: 20px;
+                cursor: pointer;
+            }
+        }
+    }
+}

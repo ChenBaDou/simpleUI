@@ -1,0 +1,15 @@
+@import '../../scss/util.scss';
+.exception-box{
+    padding: 124px 0;
+    text-align: center;
+    img{
+        width: 317px;
+        height: 180px;
+    }
+    p{
+        margin-top: 30px;
+        font-size: 20px;
+        text-align: center;
+        color: $col8;
+    }
+}

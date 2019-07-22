@@ -1,0 +1,100 @@
+@import '../util.scss';
+.layout-no {
+    padding: 0 20px 20px 20px;
+}
+.layout-colors{
+    display: flex;
+    flex-flow: row wrap;
+    @extend .layout-no;
+    li{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 80px;
+        .color-example{
+            display: block;
+            width: 39px;
+            height: 24px;
+        }
+        .color-example1{
+            background: $col1;
+        }
+        .color-example2{
+            background: $col2;
+        }
+        .color-example3{
+            background: $col3;
+        }
+        .color-example4{
+            background: $col4;
+        }
+        .color-example5{
+            background: $col5;
+        }
+        .color-example6{
+            background: $col6;
+        }
+        .color-example7{
+            background: $col7;
+        }
+        .color-example8{
+            background: $col8;
+        }
+        .color-example9{
+            background: $col9;
+        }
+        .color-example10{
+            background: $col10;
+        }
+        .color-example11{
+            background: $col11;
+        }
+        .color-example12{
+            background: $col12;
+        }
+        .color-example13{
+            background: $col13;
+        }
+        .color-name{
+            padding-top: 5px;
+            font-size: 14px;
+            color: #606266;
+        }
+    }
+}
+
+.layout-button{
+    padding: 10px;
+    margin: 10px 0;
+    li{
+        margin-bottom: 10px;
+        span{
+            margin: 5px;
+            display: inline-block;
+        }
+    }
+}
+
+.layout-icon{
+    ul{
+        display: flex;
+        // border: 1px solid #eee;
+        margin: 10px;
+        li{
+            width: 16.6%;
+            height: 120px;
+            // border-right: 1px solid #eee;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 13px;
+            .des-name{
+                display: inline-block;
+                padding: 0 3px;
+                height: 1em;
+                color: #606266;
+            }
+        }
+    }
+}

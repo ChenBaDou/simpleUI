@@ -1,0 +1,23 @@
+@import '../../scss/util.scss';
+
+.message-box{
+    position: fixed;
+    width: 100%;
+    font-size: 14px;
+    z-index: 10;
+    color: #FFFFFF;
+    &.success{
+        background:rgba(44,215,170,0.8);
+    }
+    &.error{
+        background:rgba(255,73,81,0.8);
+    }
+    p{
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        .icon{
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// 卡片区域
+.layout-com-box{
+    background: #fff;
+    margin: 20px;
+    .layout-com-tit{
+        font-size: 16px;
+        padding: 16px 32px;
+        position: relative;
+        margin-bottom: 14px;
+        color: #262626;
+        &:after{
+            display: block;
+            content: '';
+            position: absolute;
+            border-top: 1px solid #E8E8E8; 
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    
+}

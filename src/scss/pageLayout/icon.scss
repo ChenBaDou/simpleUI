@@ -1,0 +1,30 @@
+@import '../util.scss';
+.icon-list{
+    padding: 0 20px 20px 20px;
+    ul{
+        display: flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        li{
+            height: 120px;
+            box-sizing: border-box;
+            flex: 0 0 16.66%;
+            text-align: center;
+            .icon{
+                display: block;
+                height: 80px;
+                line-height: 80px;
+                font-size: 30px;
+                cursor: pointer;
+                @include transition(font-size .3s cubic-bezier(.645,.045,.355,1),padding .3s cubic-bezier(.645,.045,.355,1));
+                &:hover{
+                    font-size: 50px;
+                }
+            }
+            .icon-name{
+                color: #606266;
+                font-size: 14px;
+            }
+        }
+    }
+}

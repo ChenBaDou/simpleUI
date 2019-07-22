@@ -1,0 +1,48 @@
+@import '../../scss/util.scss';
+.dropdown-box{
+    width: 200px;
+    background: #fff;
+    .menuItem{
+        display: none;
+        &:hover{
+            background: $col4;
+        }
+    }
+    .submenu{
+        display: none;
+    }
+    .submenu{
+        position: relative;
+        .submenuItem-box{
+            width: 100px;
+            position: absolute;
+            right: -100px;
+            top: 0;
+            background: $col1;
+        }
+        .menuItem{
+            display: none;
+        }
+        &:hover{
+            .menuItem{
+                display: block;
+            }
+        }
+        &.click{
+            display: block;
+        }
+    }
+    &.hover{
+        &:hover{
+            li>.dropdownType-hover{
+                display: block;
+            }
+        }
+    }
+    .dropdownType-click{
+        display: block;
+    }
+    .disabled{
+        color: $col10;
+    }
+}

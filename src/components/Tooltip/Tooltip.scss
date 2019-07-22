@@ -1,0 +1,160 @@
+@import '../../scss/util.scss';
+
+.tooltip-area{
+    position: relative;
+    display: inline-block;
+    label{
+        background: #000000;
+        border-radius: 3px;
+        color: #fff;
+        padding: 2px;
+        position: absolute;
+        width: max-content;
+        &:after{
+            content: '';
+            border: 5px solid transparent;
+            position: absolute;
+        }
+    }
+    //top topLeft topBottom
+    label.topLeft{;
+        left: 0;
+        bottom: calc(100% + 5px);
+        &:after{
+            border-top: 5px solid #000000;
+            left: 5px;
+            bottom: -10px;
+        }
+    }
+    label.top{
+        left: 50%;
+        bottom: calc(100% + 5px);
+        transform: translate(-50%,0);
+        &:after{
+            border-top: 5px solid #000000;
+            left: 50%;
+            bottom: -10px;
+            transform: translate(-50%,0);
+        }
+    }
+    label.topRight{
+        right: 0;
+        bottom: calc(100% + 5px);
+        &:after{
+            border-top: 5px solid #000000;
+            right: 5px;
+            bottom: -10px;
+        }
+    }
+    //left leftTop leftBottom
+    label.leftTop{
+        top: 0;
+        right: calc(100% + 5px);
+        &:after{
+            border-left: 5px solid #000000;
+            top: 5px;
+            right: -10px;
+        }
+    }
+    label.left{
+        top: 50%;
+        right: calc(100% + 5px);
+        transform: translate(0,-50%);
+        &:after{
+            border-left: 5px solid #000000;
+            top: 50%;
+            right: -10px;
+            transform: translate(0,-50%);
+        }
+    }
+
+    label.leftBottom{
+        bottom: 0;
+        right: calc(100% + 5px);
+        &:after{
+            border-left: 5px solid #000000;
+            bottom: 5px;
+            right: -10px;
+        }
+    }
+    //right rightTop rightBottom
+    label.rightTop{
+        top: 0;
+        left: calc(100% + 5px);
+        &:after{
+            border-right: 5px solid #000000;
+            top: 5px;
+            left: -10px;
+        }
+    }
+    label.right{
+        top: 50%;
+        left: calc(100% + 5px);
+        transform: translate(0,-50%);
+        &:after{
+            border-right: 5px solid #000000;
+            top: 50%;
+            left: -10px;
+            transform: translate(0,-50%);
+        }
+    }
+    label.rightBottom{
+        bottom: 0;
+        left: calc(100% + 5px);
+        &:after{
+            border-right: 5px solid #000000;
+            bottom: 5px;
+            left: -10px;
+        }
+    }
+    //bottom bottomLeft  bottomRight
+    label.bottomLeft{
+        left: 0;
+        top: calc(100% + 5px);
+        &:after{
+            border-bottom: 5px solid #000000;
+            left: 5px;
+            top: -10px;
+        }
+    }
+    label.bottom{
+        left: 50%;
+        top: calc(100% + 5px);
+        transform: translate(-50%,0);
+        &:after{
+            border-bottom: 5px solid #000000;
+            left: 50%;
+            top: -10px;
+            transform: translate(-50%,0);
+        }
+    }
+    label.bottomRight{
+        right: 0;
+        top: calc(100% + 5px);
+        &:after{
+            border-bottom: 5px solid #000000;
+            right: 5px;
+            top: -10px;
+        }
+    }
+}
+//箭头指向中心
+.tooltip-area-arrowPointAtCenter{
+    position: relative;
+    display: inline-block;
+    span.arrowPointAtCenter-title{
+        position: absolute;
+        top: -32px;
+        left: 44%;
+        color: #fff;
+        background: #000;
+        border-radius: 3px;
+    }
+    em{
+        border: 5px solid transparent;
+        border-top: 5px solid #000000;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+}

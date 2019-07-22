@@ -1,0 +1,22 @@
+@import '../../scss/util.scss';
+
+.textType-title{
+    //特级标题 20px #262626 加粗
+    &.tax{
+        font-size: 20px;
+        color: #262626;
+        font-weight: 500;
+    }
+    //一级标题 16px #262626 加粗
+    &.first{
+        font-size: 16px;
+        color: #262626;
+        font-weight: 500;
+    }
+    //二级标题 14px #262626 加粗
+    &.two{
+        font-size: 14px;
+        color: #262626;
+        font-weight: 500;
+    }
+}
